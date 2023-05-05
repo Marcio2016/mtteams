@@ -4,7 +4,7 @@ import { Container, Titulo } from "./styles"
 export const Groups = () => {
     return(
         <Container>
-            <Titulo>Groups!!</Titulo>
+            
         </Container>
     )
 }
