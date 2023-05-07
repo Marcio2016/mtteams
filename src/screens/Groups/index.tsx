@@ -5,11 +5,12 @@ import { Highlight } from "@components/Highlight"
 import { useState } from "react"
 import { FlatList } from "react-native"
 import { ListEmpty } from "@components/ListEmpty"
+import { Button } from "@components/Button"
 
 
 export const Groups = () => {
     
-    const [groups, setGroups] = useState<string[]>([])
+    const [groups, setGroups] = useState<string[]>(['Galera PRF', 'Galera PF'])
     
     return(
         <Container>
@@ -27,6 +28,8 @@ export const Groups = () => {
                     message="Que tal cadastrar a primeira turma ? "
                 />}           
             />
+
+            <Button title="Criar nova turma" />
 
         </Container>
     )
