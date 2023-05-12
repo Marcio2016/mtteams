@@ -8,7 +8,7 @@ export type FilterStyleProps = {
 
 export const Container = styled(TouchableOpacity) <FilterStyleProps>`
   ${({theme, isActive }) => isActive && css `
-    boder: 1px solid ${theme.COLORS.GREEN_700}  
+    border: 1px solid ${theme.COLORS.GREEN_700}; 
   `};
 
   border-radius: 4px;
@@ -27,7 +27,6 @@ export const Title = styled.Text`
         font-family: ${theme.FONT_FAMILY.BOLD};
         font-size: ${theme.FONT_SIZE.SM}px;
         color: ${theme.COLORS.WHITE};
-  `};
+  `};   
     
-    margin-top:10px;
-`
+`;
