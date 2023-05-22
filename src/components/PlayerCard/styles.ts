@@ -18,7 +18,7 @@ export const Container = styled.View`
 
 export const Name = styled.Text`
   flex: 1;
-  
+
   ${({theme}) => css`
     font-size: ${theme.FONT_SIZE.MD}px;
     color: ${theme.COLORS.GRAY_200};
@@ -34,3 +34,4 @@ export const Icon = styled(MaterialIcons).attrs(({ theme }) => ({
   margin-left: 16px ;
   margin-right: 4px ;
 `;
+
