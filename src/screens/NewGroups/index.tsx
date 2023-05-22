@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import { Header } from "@components/Header";
 import { Container, Content, Icon } from "./styles";
 import { Highlight } from "@components/Highlight";
@@ -5,6 +6,13 @@ import { Button } from "@components/Button";
 import { Input } from "@components/Input";
 
 export function NewGroups() {
+    
+    const navigation = useNavigation()
+
+    function handleNew() {
+        navigation.navigate('players', { group: 'PF' })
+    }
+
     return(
         <Container>
             <Header showBackButton />
@@ -17,7 +25,11 @@ export function NewGroups() {
                     placeholder="Nome da Turma"
                 />
                 
-                <Button title="Criar" style={{marginTop: 20}}/>
+                <Button 
+                    title="Criar"
+                    style={{marginTop: 20}}
+                    onPress={handleNew}    
+                />
             </Content>
         </Container>
     )
